@@ -1,0 +1,34 @@
+server:
+  port: 9400
+
+
+spring:
+  application:
+    name: res-config-server
+    #配置文件在本地
+  profiles:
+    active: native
+    #配置文件的目录，D:/workspace 为上一步骤中创建的文件目录
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: D:/Users/lydia/idea
+  #配置文件在git
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/LZP0517/spring-cloud-config
+#          #          search-paths: '/{application}'
+#          username: LZP0517
+#          password: lizhipeng0517
+#          timeout: 50
+
+
+eureka:
+  #  instance:
+  #    instance-id: ${spring.application.name}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9000/eureka/

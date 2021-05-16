@@ -1,0 +1,63 @@
+server:
+  port: 9500
+
+spring:
+  application:
+    name: res-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka/
+
+#常用的配值
+#zuul:
+#  routes: #给服务配置路由
+#    user-service:
+#      path: /userService/**
+#    feign-service:
+#      path: /feignService/**
+#  ignored-services: user-service,feign-service #关闭默认路由配置
+#  prefix: /proxy #给网关路由添加前缀
+#  sensitive-headers: Cookie,Set-Cookie,Authorization #配置过滤敏感的请求头信息，设置为空就不会过滤
+#  add-host-header: true #设置为true重定向是会添加host请求头
+#  retryable: true # 关闭重试机制
+#  PreLogFilter:
+#    pre:
+#      disable: false #控制是否启用过滤器
+
+#  Zuul和Eureka结合使用，可以实现路由的自动配置，自动配置的路由以服务名称为匹配路径，相当于如下配置
+#zuul:
+#  routes:
+#    # 给服务配置路由
+#    res-service-9200:
+#      path: /res-service-9200/**
+#    res-web-9100:
+#      path: /res-web-9100/**
+zuul:
+  #设置为true重定向是会添加host请求头
+  #  add-host-header: true
+  #配置过滤敏感的请求头信息，设置为空就不会过滤
+  #  sensitive-headers: Cookie,Set-Cookie,Authorization
+  #给网关路由添加前缀
+  #  prefix: /proxy
+  routes:
+    # 给服务配置路由
+    res-service-9200:
+      path: /service/**
+    res-web-9100:
+      path: /web/**
+  sensitive-headers:
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'routes'
+
+logging:
+  level:
+    com.yc: info
+    org.springframework: warn
+    root: warn
+  file:
+    name: ./logs/res.log

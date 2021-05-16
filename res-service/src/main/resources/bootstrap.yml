@@ -1,0 +1,35 @@
+#git配置文件
+#spring:
+#  cloud:
+#    config:
+#      name: config # 获取配置文件的名称
+#      profile: dev # 配置的策略pro-生产 test-测试 dev-开发
+#      label: main # 分支
+#      discovery:
+#        enabled: true # 开启配置信息发现 默认为true
+#        service-id: res-config-server # 指定配置中心的service-id
+#本地
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      uri: http://127.0.0.1:9400
+      profile: dev
+      #      label: master
+      name: config
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+
+#git上修改了配置信息 实时刷新获取到的配置信息
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: refresh,health

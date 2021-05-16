@@ -1,0 +1,26 @@
+2021-05-14 20:27:19.250  INFO 1680 --- [restartedMain] com.yc.reszuul.ResZuulApplication        : No active profile set, falling back to default profiles: default
+2021-05-14 20:27:19.523  WARN 1680 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2021-05-14 20:27:19.596  WARN 1680 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-05-14 20:27:20.584  WARN 1680 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-05-14 20:27:20.751  WARN 1680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-14 20:27:21.209  WARN 1680 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-05-14 20:27:21.772  INFO 1680 --- [restartedMain] com.yc.reszuul.ResZuulApplication        : Started ResZuulApplication in 3.492 seconds (JVM running for 1545.968)
+2021-05-14 20:27:30.326  WARN 1680 --- [Thread-182] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1620995250326, current=DOWN, previous=UP]
+2021-05-14 20:27:52.459  INFO 6700 --- [restartedMain] com.yc.reszuul.ResZuulApplication        : No active profile set, falling back to default profiles: default
+2021-05-14 20:27:53.204  WARN 6700 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-05-14 20:27:53.227  WARN 6700 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2021-05-14 20:27:54.392  WARN 6700 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-05-14 20:27:55.856  WARN 6700 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-05-14 20:27:56.365  WARN 6700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-14 20:27:57.005  WARN 6700 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-05-14 20:27:58.787  INFO 6700 --- [restartedMain] com.yc.reszuul.ResZuulApplication        : Started ResZuulApplication in 8.316 seconds (JVM running for 9.639)
+2021-05-14 20:28:08.316  INFO 6700 --- [http-nio-9500-exec-1] com.yc.reszuul.PreLogFilter              : Remote host:0:0:0:0:0:0:0:1,method:GET,uri:/service/service
+2021-05-14 20:29:08.845  WARN 6700 --- [Thread-2] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1620995348845, current=DOWN, previous=UP]
+2021-05-14 20:29:13.269  INFO 6700 --- [restartedMain] com.yc.reszuul.ResZuulApplication        : No active profile set, falling back to default profiles: default
+2021-05-14 20:29:13.593  WARN 6700 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2021-05-14 20:29:13.680  WARN 6700 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-05-14 20:29:14.657  WARN 6700 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-05-14 20:29:14.804  WARN 6700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-05-14 20:29:15.217  WARN 6700 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-05-14 20:29:15.843  INFO 6700 --- [restartedMain] com.yc.reszuul.ResZuulApplication        : Started ResZuulApplication in 3.473 seconds (JVM running for 86.695)
+2021-05-14 20:29:22.400  INFO 6700 --- [http-nio-9500-exec-1] com.yc.reszuul.PreLogFilter              : Remote host:0:0:0:0:0:0:0:1,method:GET,uri:/service/service

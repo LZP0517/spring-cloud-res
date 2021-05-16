@@ -1,0 +1,23 @@
+server:
+  port: 9100
+
+spring:
+  application:
+    name: res-web-9100
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka/,http://127.0.0.1:9001/eureka/
+
+feign:
+  hystrix:
+    enabled: true # fegin默认关闭hystrix服务
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000
+
+test: ${mysql.driver}

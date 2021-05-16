@@ -1,0 +1,36 @@
+server:
+  port: 9200
+
+spring:
+  application:
+    name: res-service-9200
+  datasource:
+    driver-class-name: ${mysql.driver}
+    url: ${mysql.url}/res?serverTimezone=UTC
+    username: ${user}
+    password: ${password}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka/,http://127.0.0.1:9001/eureka/
+
+redis:
+  database: 0
+  # Redis服务器地址
+  host: 127.0.0.1
+  # Redis服务器连接端口
+  port: 6379
+  # Redis服务器连接密码（默认为空）
+  password:
+  # 连接池最大连接数（使用负值表示没有限制）
+  timeout: 1000
+  jedis:
+    pool:
+      max-active: 20
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+      # 连接池中的最大空闲连接
+      max-idle: 10
+      # 连接池中的最小空闲连接
+      min-idle: 0

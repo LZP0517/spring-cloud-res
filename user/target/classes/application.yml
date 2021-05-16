@@ -1,0 +1,15 @@
+server:
+  port: 9600
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka/
+spring:
+  datasource:
+    driver-class-name: ${mysql.driver}
+    url: ${mysql.url}/res?serverTimezone=UTC
+    username: ${user}
+    password: ${password}
+  application:
+    name: res-user-9600
